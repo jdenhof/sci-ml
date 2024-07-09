@@ -1,13 +1,11 @@
 # Experiment Parameters
-root_dir: /mnt/projects/debruinz_project/integration/tensorboard
-experiment_name: snakemake_testing
-run_name: run1
+root_dir: tensorboard
+experiment_name: experiment
+run_name: run
 
 config_name: config.yaml
 
 ckpt_path: checkpoints/last.ckpt
-
-
 
 
 # ENVIROMENT SPECIFIC
