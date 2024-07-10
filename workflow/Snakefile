@@ -4,7 +4,6 @@ import yaml
 import warnings
 import glob
 
-
 # Load the config file
 configfile: "workflow/config.yaml"
 
@@ -16,7 +15,6 @@ EXPERIMENT_NAME = config["experiment_name"]
 RUN_NAME = config["run_name"]
 
 RUN_DIR = os.path.join(ROOT_DIR, EXPERIMENT_NAME, RUN_NAME)
-
 
 if config.get('retrying', False):
     if not os.path.exists(RUN_DIR):

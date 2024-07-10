@@ -71,7 +71,7 @@ class BaseVAEModel(pl.LightningModule):
             
         embeddings_path = os.path.join(self.logger.log_dir, 'samples', embeddings_name)
         metadata_path = os.path.join(self.logger.log_dir, 'samples', metadata_name)
-        
+    
         np.savez(embeddings_path, embeddings=embeddings)
         metadata.to_pickle(metadata_path)
             
